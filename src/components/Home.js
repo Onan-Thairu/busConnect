@@ -6,7 +6,7 @@ function Home() {
     <div>
       <main>
         <p>Online Bus Booking service.</p>
-        <p>Travel hustle free.</p>
+        <p>Travel hassle-free.</p>
         <Link to="/providers" >
           <button>BOOK BUS</button>
         </Link>
