@@ -1,10 +1,15 @@
 import React from "react";
+import { NavLink } from "react-router-dom"
 
 function Nav() {
     return (
     <nav>
         <h1>BusConnect</h1>
-        <a href="#">About</a>
+        <div>
+          <NavLink to="/">Home</NavLink>
+          <br />
+          <NavLink to="/about">About</NavLink>
+        </div>
     </nav>
     )
 }
