@@ -1,12 +1,13 @@
-import React, { useEffect, useState } from "react";
+import "./Provider.css"
+import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 
-function Providers() {
-  const [transporters, setTransporters] = useState([])
+function Providers({ transporters, setTransporters }) {
+  
   useEffect(() => {
-    fetch("http://localhost:3001/transporters")
+    fetch("https://busconnectserver.herokuapp.com/transporters")
     .then((response) => response.json())
     .then((data) => {
-        console.log(data)
         setTransporters(data)
     })
   },[])
@@ -17,8 +18,8 @@ function Providers() {
       {
         transporters.map((transporter) => {
           return (
-            <div key={ transporter.id }>
-              <h1>{ transporter.name }</h1>
+            <div key={ transporter.id } className="container">
+              <Link to={`${transporter.name}`}  >{ transporter.name }</Link>
             </div>
           )
         })
