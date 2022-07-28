@@ -1,0 +1,23 @@
+main {
+    margin-top: 8%;
+}
+.hero {
+    display: flex;
+    flex-shrink: 1;
+    gap: 2rem;
+}
+
+div .intro p {
+    font-size: 2em;
+    margin-left: 40px;
+    letter-spacing: .2rem;
+}
+
+.images {
+    flex-shrink: auto;
+}
+
+.bookBus {
+    background-color: aquamarine;
+    text-align: center;
+}
