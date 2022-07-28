@@ -6,6 +6,7 @@ import Providers from './Providers';
 import ProviderDetail from './ProviderDetail';
 import About from './About';
 import { Routes, Route } from "react-router-dom"
+import BookingForm from './BookingForm';
 
 function App() {
   const [transporters, setTransporters] = useState([])
@@ -18,6 +19,7 @@ function App() {
         <Route path='/providers' element={ <Providers transporters={transporters} setTransporters={setTransporters} /> } ></Route>
         <Route path='/about' element={ <About /> }></Route>
         <Route path='/providers/:providerName' element={ <ProviderDetail transporters={transporters} /> }></Route>
+        <Route path='/booking-form' element={ <BookingForm /> } />
       </Routes>
     </>
   );

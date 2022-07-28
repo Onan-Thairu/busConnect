@@ -18,7 +18,7 @@ function ProviderDetail({ transporters }) {
             <td>{destination.to}</td>
             <td>{destination.seats}</td>
             <td>{destination.price}</td>
-            <Link to="/BookingForm">Book</Link>
+            <Link to="/booking-form">Book</Link>
           </tbody>
         </>
       )
