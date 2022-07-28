@@ -14,11 +14,13 @@ function ProviderDetail({ transporters }) {
       return (
         <>
           <tbody key={index}>
-            <td>{destination.from}</td>
-            <td>{destination.to}</td>
-            <td>{destination.seats}</td>
-            <td>{destination.price}</td>
-            <Link to="/booking-form">Book</Link>
+            <tr key="table-row">
+              <td key={destination.from}>{destination.from}</td>
+              <td key={destination.to}>{destination.to}</td>
+              <td key={destination.seats}>{destination.seats}</td>
+              <td key={destination.price}>{destination.price}</td>
+              <td key="booking-form"><Link key="link" to="/booking-form">Book</Link></td>
+            </tr>
           </tbody>
         </>
       )
