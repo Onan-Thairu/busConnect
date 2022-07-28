@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import BookingDetail from "./BookingDetail";
 
 function BookingForm() {
     const [formData, setFormData] = useState({
@@ -17,7 +18,6 @@ function BookingForm() {
 
     function handleSubmit(e) {
         e.preventDefault()
-        console.log(formData)
         fetch(`https://busconnectserver.herokuapp.com/bookings`, {
           method: "POST",
           headers: {
@@ -25,7 +25,6 @@ function BookingForm() {
           },
           body: JSON.stringify(formData)
         })
-        
     }
 
     return (
@@ -68,6 +67,8 @@ function BookingForm() {
                 </select>
                 <input type="submit" />
             </form>
+            <h3>Your Travel Bookings</h3>
+            <BookingDetail bookings={ formData } />
         </div>
     )
 }
