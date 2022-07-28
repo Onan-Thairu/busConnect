@@ -15,7 +15,7 @@ function Home() {
           </div>
           <div className='images'>
             <img src={traveler} alt="traveler" width="250px" />
-            <img src={bus} alt="bus" width="250px" />
+            <img src={bus} alt="bus" width="250px" id='bus' />
           </div>
         </div>
         <div className='bookButton'>
