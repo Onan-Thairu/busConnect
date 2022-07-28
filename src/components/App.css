@@ -2,4 +2,6 @@ html, body {
   font-family: 'Kanit', sans-serif;
   color: #0A2342;
   background-color: #FFFFFF;
+  margin: 0;
+  padding: 0;
 }
