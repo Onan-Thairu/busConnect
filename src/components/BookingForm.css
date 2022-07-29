@@ -1,0 +1,35 @@
+.booking-header {
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    font-size: 1.6em;
+}
+
+.form-container form {
+    margin-left: 30px;
+    font-size: 1.1em;
+    letter-spacing: .1em;
+}
+
+.form-container form select {
+    width: 150px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+}
+
+.form-container form input[type=submit] {
+    background-color: #1d2836;
+    color: #F1F1F1;
+    margin-left: 10px;
+    padding: 8px 10px;
+    border-radius: 7px;
+    border: none;
+    font-weight: bold;
+}
+
+.form-container form label {
+    margin-right: 5px;
+    margin-left: 5px;
+}
