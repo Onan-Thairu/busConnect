@@ -1,3 +1,4 @@
+import "./ProviderDetail.css"
 import React from "react";
 import { useParams, Link } from "react-router-dom"
 
@@ -27,8 +28,8 @@ function ProviderDetail({ transporters }) {
     })
  
     return (
-        <div>
-            <h1>{ currentProvider.name }</h1>
+        <div className="tableContainer">
+            <h1 className="providerName">{ currentProvider.name }</h1>
             <table>
               <thead>
                 <tr>

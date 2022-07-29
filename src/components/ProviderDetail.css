@@ -1,0 +1,38 @@
+.tableContainer {
+    margin-top: 50px;
+}
+
+.tableContainer h1 {
+    text-align: left;
+    font-size: 1.7em;
+    margin-bottom: 20px;
+    margin-left: 30px;
+   
+    width: 200px;
+}
+
+.tableContainer table {
+    
+    margin-left: 30px;
+    border-collapse: collapse;
+}
+
+.tableContainer td {
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.tableContainer table th {
+    color: #1d2836;
+    border-bottom: 2px solid #1d2836;
+    padding-right: 30px;
+    font-size: 1.2em;
+}
+
+.tableContainer table td a {
+    background-color: #1d2836;
+    color: #F1F1F1;
+    padding: 8px 10px;
+    border-radius: 7px;
+}
