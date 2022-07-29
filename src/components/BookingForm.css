@@ -42,3 +42,7 @@
 .booking-detail-header h3 {
     letter-spacing: .2em;
 }
+
+.all-bookings {
+    margin-top: 30px;
+}

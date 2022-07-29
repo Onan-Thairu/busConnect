@@ -3,6 +3,10 @@ import React, { useState } from "react";
 import BookingDetail from "./BookingDetail";
 
 function BookingForm() {
+    const baseUrl = `https://busconnectserver.herokuapp.com/bookings`
+
+    const [booked, setBooked] = useState([])
+
     const [formData, setFormData] = useState({
         provider:"",
         from:"",
@@ -19,14 +23,21 @@ function BookingForm() {
 
     function handleSubmit(e) {
         e.preventDefault()
-        fetch(`https://busconnectserver.herokuapp.com/bookings`, {
+        fetch(baseUrl, {
           method: "POST",
           headers: {
             "Content-Type": "application/json"
           },
           body: JSON.stringify(formData)
         })
-        .then(() => e.target.reset())
+        .then(() => {
+            e.target.reset()
+            fetch(baseUrl)
+            .then((res) => res.json())
+            .then((data) => {
+                setBooked(data)
+            })
+        })
     }
 
     return (
@@ -74,8 +85,22 @@ function BookingForm() {
                 </form>
             </div>
             <div className="booking-detail-header">
-                <h3>Your Travel Bookings</h3>
-                <BookingDetail bookings={ formData } />
+                <div>
+                    <h3>Your Travel Bookings</h3>
+                    <BookingDetail bookings={ formData } />
+                </div>
+                <div className="all-bookings">
+                    <h3>All Bookings</h3>
+                    <ul>
+                        {
+                            booked.map((book, index) => {
+                              return (
+                                <li key={index}><span className="ul-header">{ book.provider}</span>:<span className="ul-header">From</span> { book.from}  - <span className="ul-header">To</span>{ book.to} <span>({book.tickets} ticket(s))</span></li>
+                              )  
+                            })
+                        }
+                    </ul>
+                </div>
             </div>
         </div>
     )
