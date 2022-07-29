@@ -1,10 +1,11 @@
+import "./BookingDetail.css"
 import React from "react";
 
 function BookingDetail({ bookings }) {
     return (
       <>
         <ul>
-          <span>{ bookings.provider}: From { bookings.from} - To { bookings.to} ({bookings.tickets} ticket(s))</span>
+          <span className="ul-header">{ bookings.provider}</span>:<span className="ul-header">From</span> { bookings.from}  - <span className="ul-header">To</span>{ bookings.to} <span>({bookings.tickets} ticket(s))</span>
         </ul>
       </>
     )
