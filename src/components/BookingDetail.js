@@ -11,11 +11,12 @@ function BookingDetail({ bookings }) {
   // }, [])
 
     return (
-      <>
+      <div>
         <p>
           <span className="ul-header">{ bookings.provider}</span>:<span className="ul-header">From</span> { bookings.from}  - <span className="ul-header">To</span>{ bookings.to} <span>({bookings.tickets} ticket(s))</span>
         </p>
         <ul>
+          <li>This is a list element</li>
           {/* {
             
               
@@ -23,7 +24,7 @@ function BookingDetail({ bookings }) {
             })
           } */}
         </ul>
-      </>
+      </div>
     )
 }
 

@@ -26,6 +26,7 @@ function BookingForm() {
           },
           body: JSON.stringify(formData)
         })
+        .then(() => e.target.reset())
     }
 
     return (
