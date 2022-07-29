@@ -33,3 +33,12 @@
     margin-right: 5px;
     margin-left: 5px;
 }
+
+.booking-detail-header {
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.booking-detail-header h3 {
+    letter-spacing: .2em;
+}

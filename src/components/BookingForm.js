@@ -72,8 +72,10 @@ function BookingForm() {
                     <input type="submit" />
                 </form>
             </div>
-            <h3>Your Travel Bookings</h3>
-            <BookingDetail bookings={ formData } />
+            <div className="booking-detail-header">
+                <h3>Your Travel Bookings</h3>
+                <BookingDetail bookings={ formData } />
+            </div>
         </div>
     )
 }
