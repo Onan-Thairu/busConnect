@@ -1,0 +1,39 @@
+.choose {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.choose p {
+    font-size: 1.5em;
+    font-weight: lighter;
+}
+
+.providerContainer {
+    display: flex;
+    gap: 40px;
+    text-align: center;
+    justify-content: center;
+}
+
+.providerChild {
+    background-color: #0A2342;
+    margin-top: 50px;
+    width: 200px;
+    height: 150px;
+    padding-top: 60px;
+    border-radius: 50%;
+}
+
+.providerChild:hover {
+    background-color: #485b72;
+}
+
+.providerChild a {
+    color: #F1F1F1;
+    font-size: 2em;
+    letter-spacing: .1em;
+}
+
+.providerChild a:hover {
+    color: yellow;
+}
