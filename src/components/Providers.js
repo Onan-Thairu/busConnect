@@ -10,7 +10,7 @@ function Providers({ transporters, setTransporters }) {
     .then((data) => {
         setTransporters(data)
     })
-  },[])
+  },[setTransporters])
 
   return (
       <div>
