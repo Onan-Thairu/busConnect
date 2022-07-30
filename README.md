@@ -33,7 +33,7 @@
  * React
  
  ### Live link
- *https://github.com/Onan-Thairu
+ *https://busconnect.netlify.app/
  
  
  ## Licence
