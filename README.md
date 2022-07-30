@@ -32,9 +32,8 @@
 
  * React
  
- ### Link to Github pages
- 
- 
+ ### Live link
+ *https://github.com/Onan-Thairu
  
  
  ## Licence
